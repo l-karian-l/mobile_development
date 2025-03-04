@@ -4,7 +4,7 @@
 
 ## Описание выполненных работ:
 <details>
-  <summary>Практическое занятие №1: </summary>
+  <summary>Практическое занятие №1: (Lesson 1)</summary>
 
   #### [Папка с выполненным заданием](mobile_development/Lesson1)
   
