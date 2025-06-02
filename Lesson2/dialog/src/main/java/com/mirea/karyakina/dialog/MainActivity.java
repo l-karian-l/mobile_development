@@ -9,6 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.DialogFragment;
+
+import com.google.android.material.snackbar.Snackbar;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,4 +39,28 @@ public class MainActivity extends AppCompatActivity {
     public void onNeutralClicked() {
         Toast.makeText(this, "Вы выбрали кнопку \"На паузе\"!", Toast.LENGTH_LONG).show();
     }
+
+    public void onClickShowSnackbar(View view) {
+        Snackbar.make(findViewById(android.R.id.content), "Это Snackbar сообщение", Snackbar.LENGTH_LONG)
+                .setAction("Действие", v -> {
+                    Toast.makeText(this, "Действие выполнено!", Toast.LENGTH_SHORT).show();
+                })
+                .show();
+    }
+
+    public void showTimePickerDialog(View view) {
+        DialogFragment timeDialog = new MyTimeDialogFragment();
+        timeDialog.show(getSupportFragmentManager(), "Реализация TimePicker");
+    }
+
+    public void onDateShowDialog(View view) {
+        DialogFragment dateDialog = new MyDateDialogFragment();
+        dateDialog.show(getSupportFragmentManager(), "Реализация DatePicker");
+    }
+
+    public void onShowProgressDialog(View view) {
+        DialogFragment progDialog = new MyProgressDialogFragment();
+        progDialog.show(getSupportFragmentManager(), "Реализация DatePicker");
+    }
+
 }
