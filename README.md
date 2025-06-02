@@ -24,5 +24,39 @@
 
 4. [Модуль "buttonclicker"](mobile_development/Lesson1/buttonclicker/):
   В этом модуле были реализованы обработчики событий для кнопок, изменяющих текст в TextView и состояние CheckBox при нажатии.
-
 </details>
+
+<details>
+  <summary>Практическое занятие №2: (Lesson 2)</summary>
+
+  #### [Папка с выполненным заданием](mobile_development/Lesson2)
+  
+  #### Описание
+  В рамках данного практического занятия были изучены инструменты отладки, жизненный цикл Activity, работа с Intent и диалоговыми окнами. Основные задачи включали освоение методов логирования, анализ жизненного цикла компонентов, реализацию межэкранных переходов и создание различных типов уведомлений.
+
+  #### Cозданные модули
+  В процессе выполнения практического занятия был создан проект **Lesson2** и реализованы следующие модули:
+  1. [Модуль "activitylifecycle1"](mobile_development/Lesson2/activitylifecycle1/):
+  Данный модуль использовался для изучения инструментов отладки в Android Studio. Также были исследованы методы жизненного цикла Activity (onCreate, onStart, onResume и др.), сохранение состояния приложения (onSaveInstanceState). Проведены тесты поведения Activity при различных сценариях (Home, Back)
+
+2. [Модуль "multiactivity"](mobile_development/Lesson2/multiactivity/):
+  В этом модуле было создано приложение с несколькими Activity. Реализован переход между экранами с помощью явного Intent. Освоена передача данных между Activity через Bundle
+
+3. [Модуль "interfilter"](mobile_development/Lesson2/interfilter/):
+  В этом модуле были реализованы неявные Intent для открытия веб-страниц.
+
+4. [Модуль "toastapp"](mobile_development/Lesson2/toastapp/):
+  В этом модуле были реализованы всплывающие уведомления (Toast). Реализован подсчет символов в EditText, а также отображение группы студента и его номера в списках.
+
+5. [Модуль "notificationapp"](mobile_development/Lesson2/notificationapp/):
+  В этом модуле были реализованы уведомления (Notifications). Были добавлены разрешения для работы с Notification.
+
+6. [Модуль "dialog"](mobile_development/Lesson2/dialog/):
+  В этом модуле были созданы различные типы Dialog и добавлены соответствующие элементы интерфейса:
+    - **snackbar** - легковесный компонент интерфейса в Android, предназначенный для отображения краткосрочных сообщений , которые могут содержать действие (action). Был реализован в основном файле [**MainActivity**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MainActivity.java);
+    - [**AlertDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/AlertDialogFragment.java) - стандартное диалоговое окно в Android, которое позволяет выводить пользователю сообщения, запрашивать подтверждение действий или ввод данных
+    - [**DatePickerDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyDateDialogFragment.java) - стандартный диалог в Android для выбора даты (день, месяц, год).
+    - [**TimePickerDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyTimeDialogFragment.java) - это стандартный диалог в Android, позволяющий пользователю выбрать время (часы и минуты). 
+    - [**ProgressDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyProgressDialogFragment.java) - это диалоговое окно , которое отображает индикатор прогресса (загрузки, ожидания, выполнения задачи) и, при необходимости, текстовое сообщение. 
+</details>
+
