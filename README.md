@@ -53,10 +53,10 @@
 
 6. [Модуль "dialog"](mobile_development/Lesson2/dialog/):
   В этом модуле были созданы различные типы Dialog и добавлены соответствующие элементы интерфейса:
-    - **snackbar** - легковесный компонент интерфейса в Android, предназначенный для отображения краткосрочных сообщений , которые могут содержать действие (action). Был реализован в основном файле [**MainActivity**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MainActivity.java);
-    - [**AlertDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/AlertDialogFragment.java) - стандартное диалоговое окно в Android, которое позволяет выводить пользователю сообщения, запрашивать подтверждение действий или ввод данных
-    - [**DatePickerDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyDateDialogFragment.java) - стандартный диалог в Android для выбора даты (день, месяц, год).
-    - [**TimePickerDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyTimeDialogFragment.java) - это стандартный диалог в Android, позволяющий пользователю выбрать время (часы и минуты). 
-    - [**ProgressDialog**](mobile_development/Lesson2/dialog/src/main/java/com/mirea/karyakina/dialog/MyProgressDialogFragment.java) - это диалоговое окно , которое отображает индикатор прогресса (загрузки, ожидания, выполнения задачи) и, при необходимости, текстовое сообщение. 
+    - **snackbar** - легковесный компонент интерфейса в Android, предназначенный для отображения краткосрочных сообщений , которые могут содержать действие (action). Был реализован в основном файле;
+    - **AlertDialog** - стандартное диалоговое окно в Android, которое позволяет выводить пользователю сообщения, запрашивать подтверждение действий или ввод данных
+    - **DatePickerDialog** - стандартный диалог в Android для выбора даты (день, месяц, год).
+    - **TimePickerDialog** - это стандартный диалог в Android, позволяющий пользователю выбрать время (часы и минуты). 
+    - **ProgressDialog** - это диалоговое окно , которое отображает индикатор прогресса (загрузки, ожидания, выполнения задачи) и, при необходимости, текстовое сообщение. 
 </details>
 
