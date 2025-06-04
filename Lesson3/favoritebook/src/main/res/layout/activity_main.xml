@@ -8,12 +8,33 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txt_AboutBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:text="Тут появится название вашей любимой книги и любимая цитата из нее!"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="336dp"
+        android:text="Открыть экран ввода данных"
+        android:textSize="16sp"
+        android:onClick="onClickNewTextAboutBook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AboutBook"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
