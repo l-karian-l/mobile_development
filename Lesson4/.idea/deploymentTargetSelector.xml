@@ -16,6 +16,39 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
+      <SelectionState runConfigName="thread">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2025-06-05T12:33:53.657317400Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ak010\.android\avd\Pixel_9_API_35.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="data_thread">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2025-06-05T12:33:39.234129600Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ak010\.android\avd\Pixel_9_API_35.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="looper">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2025-06-05T14:24:53.219174100Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ak010\.android\avd\Pixel_9_API_35.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

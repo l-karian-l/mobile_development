@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Ваш возраст:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:hint="Введите свой возраст"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Кем вы работает?"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:hint="Введите кем вы работаете"
+        />
+
+        <Button
+            android:id="@+id/btnLoop"
+            android:layout_width="211dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:insetTop="10dp"
+            android:text="Send"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
