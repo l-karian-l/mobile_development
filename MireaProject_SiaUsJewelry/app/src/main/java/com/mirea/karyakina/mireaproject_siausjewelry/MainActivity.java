@@ -11,6 +11,12 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.Constraints;
+import androidx.work.NetworkType;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
+
 import com.mirea.karyakina.mireaproject_siausjewelry.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        Constraints constraints	= new Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.UNMETERED)
+                .setRequiresCharging(true)
+                .build();
+
+        WorkRequest uploadWorkRequest = new	OneTimeWorkRequest.Builder(UploadWorker.class)
+                .setConstraints(constraints)
+                .build();
+
+        WorkManager
+                .getInstance(this)
+                .enqueue(uploadWorkRequest);
+
+
+        WorkManager.getInstance(this).enqueue(uploadWorkRequest);
     }
 
     @Override
@@ -61,4 +83,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }

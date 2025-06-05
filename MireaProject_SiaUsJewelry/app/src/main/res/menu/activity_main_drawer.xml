@@ -24,6 +24,10 @@
             android:id="@+id/nav_webViewFragment"
             android:icon="@drawable/ic_internet"
             android:title="Сайт" />
+        <item
+            android:id="@+id/nav_cashworker"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Запуск кэширования" />
 
     </group>
 </menu>

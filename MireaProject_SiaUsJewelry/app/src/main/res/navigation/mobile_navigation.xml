@@ -34,4 +34,9 @@
         android:name="com.mirea.karyakina.mireaproject_siausjewelry.WebViewFragment"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/fragmentCacheWorker"
+        android:name="com.mirea.karyakina.mireaproject_siausjewelry.FragmentCacheWorker"
+        android:label="fragment_cache_worker"
+        tools:layout="@layout/fragment_cache_worker" />
 </navigation>
