@@ -20,6 +20,7 @@ public class UploadWorker extends Worker{
 
     @Override
     public Result doWork() {
+
         Log.d(TAG, "Work: start");
         try {
             TimeUnit.SECONDS.sleep(10);

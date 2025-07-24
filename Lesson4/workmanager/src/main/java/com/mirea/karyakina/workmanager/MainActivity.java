@@ -1,5 +1,6 @@
 package com.mirea.karyakina.workmanager;
 
+import android.app.ApplicationErrorReport;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Constraints constraints	= new Constraints.Builder()
-                .setRequiredNetworkType(NetworkType.UNMETERED)
-                .setRequiresCharging(true)
+                .setRequiresBatteryNotLow(true)
+                /*.setRequiredNetworkType(NetworkType.UNMETERED)*/
                 .build();
 
         WorkRequest	uploadWorkRequest = new	OneTimeWorkRequest.Builder(UploadWorker.class)
